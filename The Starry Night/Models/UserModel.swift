@@ -7,22 +7,11 @@
 
 import Foundation
 
-struct UserModel: Identifiable, Codable {
-    /// UserID
-    var id: String = UUID().uuidString
+struct UserModel: Codable {
     /// User Name
     var userName: String
     /// User Stars
-    var userStars: [String]?
+    var userStarsID: [String]?
     /// User Coments
-    var userComents: [String]?
-    
-    // Firestore에서 사용하기 위해 Dictionary로 변환
-    func toDictionary() -> [String: Any] {
-        return [
-            "userName": userName,
-            "userStars": userStars ?? [],
-            "userComents": userComents ?? []
-        ]
-    }
+    var userComentsID: [String]?
 }

@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct MypageView: View {
-    @State var name: String = "재승"
+    @StateObject var userStore = UserStore.shared
     
     var body: some View {
         NavigationStack {
-            Text("안녕하세요. \(name)님!")
+            Text("안녕하세요. \(userStore.user?.userName ?? "익명")님!")
         }
         .navigationTitle("My Page")
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -23,5 +23,5 @@ struct MypageView: View {
 }
 
 #Preview {
-    MypageView()
+    MypageView(userStore: UserStore.shared)
 }
