@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083D77552B34783D002DA421 /* StarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083D77542B34783D002DA421 /* StarDetailView.swift */; };
+		089B431B2AFF70AE0018293C /* The_Starry_NightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B431A2AFF70AE0018293C /* The_Starry_NightApp.swift */; };
+		089B431D2AFF70AE0018293C /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B431C2AFF70AE0018293C /* CustomTabView.swift */; };
+		089B431F2AFF70B30018293C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089B431E2AFF70B30018293C /* Assets.xcassets */; };
+		089B43222AFF70B30018293C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089B43212AFF70B30018293C /* Preview Assets.xcassets */; };
+		089B43292AFF71E70018293C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B43282AFF71E70018293C /* HomeView.swift */; };
+		089B432B2AFF71FA0018293C /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B432A2AFF71FA0018293C /* AddView.swift */; };
+		089B432D2AFF720B0018293C /* MypageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089B432C2AFF720B0018293C /* MypageView.swift */; };
+		08A110262B22FB8400204675 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A110252B22FB8400204675 /* StarView.swift */; };
+		08E6E5572BE32F69009CE756 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6E5562BE32F68009CE756 /* UserModel.swift */; };
+		08E6E55A2BE33058009CE756 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6E5592BE33058009CE756 /* UserStore.swift */; };
+		08E6E55C2BE334C0009CE756 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08E6E55B2BE334C0009CE756 /* GoogleService-Info.plist */; };
+		08E6E55F2BE335A1009CE756 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 08E6E55E2BE335A1009CE756 /* FirebaseAnalytics */; };
+		08F151F02B74A64D0060EBC9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F151EF2B74A64D0060EBC9 /* Enums.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		083D77542B34783D002DA421 /* StarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarDetailView.swift; sourceTree = "<group>"; };
+		089B43172AFF70AE0018293C /* The Starry Night.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Starry Night.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		089B431A2AFF70AE0018293C /* The_Starry_NightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Starry_NightApp.swift; sourceTree = "<group>"; };
+		089B431C2AFF70AE0018293C /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		089B431E2AFF70B30018293C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		089B43212AFF70B30018293C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		089B43282AFF71E70018293C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		089B432A2AFF71FA0018293C /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		089B432C2AFF720B0018293C /* MypageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageView.swift; sourceTree = "<group>"; };
+		08A110252B22FB8400204675 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		08E6E5562BE32F68009CE756 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		08E6E5592BE33058009CE756 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		08E6E55B2BE334C0009CE756 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		08F151EF2B74A64D0060EBC9 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		089B43142AFF70AE0018293C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E6E55F2BE335A1009CE756 /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089B430E2AFF70AE0018293C = {
+			isa = PBXGroup;
+			children = (
+				089B43192AFF70AE0018293C /* The Starry Night */,
+				089B43182AFF70AE0018293C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		089B43182AFF70AE0018293C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				089B43172AFF70AE0018293C /* The Starry Night.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		089B43192AFF70AE0018293C /* The Starry Night */ = {
+			isa = PBXGroup;
+			children = (
+				089B431A2AFF70AE0018293C /* The_Starry_NightApp.swift */,
+				08F151EF2B74A64D0060EBC9 /* Enums.swift */,
+				08E6E55B2BE334C0009CE756 /* GoogleService-Info.plist */,
+				08E6E5552BE32F2E009CE756 /* Views */,
+				08E6E5582BE3301F009CE756 /* ViewModels,Store */,
+				08E6E5542BE32F11009CE756 /* Models */,
+				089B431E2AFF70B30018293C /* Assets.xcassets */,
+				089B43202AFF70B30018293C /* Preview Content */,
+			);
+			path = "The Starry Night";
+			sourceTree = "<group>";
+		};
+		089B43202AFF70B30018293C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				089B43212AFF70B30018293C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08E6E5542BE32F11009CE756 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08E6E5562BE32F68009CE756 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08E6E5552BE32F2E009CE756 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				089B431C2AFF70AE0018293C /* CustomTabView.swift */,
+				089B43282AFF71E70018293C /* HomeView.swift */,
+				083D77542B34783D002DA421 /* StarDetailView.swift */,
+				089B432A2AFF71FA0018293C /* AddView.swift */,
+				08A110252B22FB8400204675 /* StarView.swift */,
+				089B432C2AFF720B0018293C /* MypageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08E6E5582BE3301F009CE756 /* ViewModels,Store */ = {
+			isa = PBXGroup;
+			children = (
+				08E6E5592BE33058009CE756 /* UserStore.swift */,
+			);
+			path = "ViewModels,Store";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		089B43162AFF70AE0018293C /* The Starry Night */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 089B43252AFF70B30018293C /* Build configuration list for PBXNativeTarget "The Starry Night" */;
+			buildPhases = (
+				089B43132AFF70AE0018293C /* Sources */,
+				089B43142AFF70AE0018293C /* Frameworks */,
+				089B43152AFF70AE0018293C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Starry Night";
+			packageProductDependencies = (
+				08E6E55E2BE335A1009CE756 /* FirebaseAnalytics */,
+			);
+			productName = "The Starry Night";
+			productReference = 089B43172AFF70AE0018293C /* The Starry Night.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089B430F2AFF70AE0018293C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					089B43162AFF70AE0018293C = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 089B43122AFF70AE0018293C /* Build configuration list for PBXProject "The Starry Night" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 089B430E2AFF70AE0018293C;
+			packageReferences = (
+				08E6E55D2BE335A1009CE756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 089B43182AFF70AE0018293C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				089B43162AFF70AE0018293C /* The Starry Night */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		089B43152AFF70AE0018293C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				089B43222AFF70B30018293C /* Preview Assets.xcassets in Resources */,
+				089B431F2AFF70B30018293C /* Assets.xcassets in Resources */,
+				08E6E55C2BE334C0009CE756 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		089B43132AFF70AE0018293C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A110262B22FB8400204675 /* StarView.swift in Sources */,
+				089B432B2AFF71FA0018293C /* AddView.swift in Sources */,
+				089B43292AFF71E70018293C /* HomeView.swift in Sources */,
+				089B431D2AFF70AE0018293C /* CustomTabView.swift in Sources */,
+				089B431B2AFF70AE0018293C /* The_Starry_NightApp.swift in Sources */,
+				089B432D2AFF720B0018293C /* MypageView.swift in Sources */,
+				08E6E55A2BE33058009CE756 /* UserStore.swift in Sources */,
+				08F151F02B74A64D0060EBC9 /* Enums.swift in Sources */,
+				08E6E5572BE32F69009CE756 /* UserModel.swift in Sources */,
+				083D77552B34783D002DA421 /* StarDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		089B43232AFF70B30018293C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		089B43242AFF70B30018293C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		089B43262AFF70B30018293C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Starry Night/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2PM3ABM7M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonLee.The-Starry-Night";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		089B43272AFF70B30018293C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Starry Night/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2PM3ABM7M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jasonLee.The-Starry-Night";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		089B43122AFF70AE0018293C /* Build configuration list for PBXProject "The Starry Night" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089B43232AFF70B30018293C /* Debug */,
+				089B43242AFF70B30018293C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		089B43252AFF70B30018293C /* Build configuration list for PBXNativeTarget "The Starry Night" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				089B43262AFF70B30018293C /* Debug */,
+				089B43272AFF70B30018293C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08E6E55D2BE335A1009CE756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08E6E55E2BE335A1009CE756 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E6E55D2BE335A1009CE756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 089B430F2AFF70AE0018293C /* Project object */;
+}
