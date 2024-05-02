@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-enum StarSize {
-    case small, normal, big
-}
-
-enum Category {
-    case todayStar, myStar
-}
-
 struct HomeView: View {
     @State private var category: Category = .todayStar
     @State private var isShowingDetailView: Bool = false

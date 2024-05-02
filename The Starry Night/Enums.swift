@@ -10,3 +10,11 @@ import Foundation
 enum TabIndex {
     case home, add, my
 }
+
+enum StarSize {
+    case small, normal, big
+}
+
+enum Category {
+    case todayStar, myStar
+}

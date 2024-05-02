@@ -20,6 +20,11 @@
 		08E6E55A2BE33058009CE756 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6E5592BE33058009CE756 /* UserStore.swift */; };
 		08E6E55C2BE334C0009CE756 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08E6E55B2BE334C0009CE756 /* GoogleService-Info.plist */; };
 		08E6E55F2BE335A1009CE756 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 08E6E55E2BE335A1009CE756 /* FirebaseAnalytics */; };
+		08E6E5612BE34CBF009CE756 /* StarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6E5602BE34CBF009CE756 /* StarModel.swift */; };
+		08E6E5632BE352A4009CE756 /* StarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E6E5622BE352A4009CE756 /* StarStore.swift */; };
+		08E6E5662BE35825009CE756 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 08E6E5652BE35825009CE756 /* FirebaseFirestore */; };
+		08E6E5682BE3583A009CE756 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 08E6E5672BE3583A009CE756 /* FirebaseFirestoreSwift */; };
+		08E6E56A2BE35879009CE756 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 08E6E5692BE35879009CE756 /* FirebaseFirestoreCombine-Community */; };
 		08F151F02B74A64D0060EBC9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F151EF2B74A64D0060EBC9 /* Enums.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +42,8 @@
 		08E6E5562BE32F68009CE756 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		08E6E5592BE33058009CE756 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		08E6E55B2BE334C0009CE756 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		08E6E5602BE34CBF009CE756 /* StarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarModel.swift; sourceTree = "<group>"; };
+		08E6E5622BE352A4009CE756 /* StarStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarStore.swift; sourceTree = "<group>"; };
 		08F151EF2B74A64D0060EBC9 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +53,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				08E6E55F2BE335A1009CE756 /* FirebaseAnalytics in Frameworks */,
+				08E6E56A2BE35879009CE756 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				08E6E5662BE35825009CE756 /* FirebaseFirestore in Frameworks */,
+				08E6E5682BE3583A009CE756 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +67,7 @@
 			children = (
 				089B43192AFF70AE0018293C /* The Starry Night */,
 				089B43182AFF70AE0018293C /* Products */,
+				08E6E5642BE35825009CE756 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				08E6E5562BE32F68009CE756 /* UserModel.swift */,
+				08E6E5602BE34CBF009CE756 /* StarModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,8 +128,16 @@
 			isa = PBXGroup;
 			children = (
 				08E6E5592BE33058009CE756 /* UserStore.swift */,
+				08E6E5622BE352A4009CE756 /* StarStore.swift */,
 			);
 			path = "ViewModels,Store";
+			sourceTree = "<group>";
+		};
+		08E6E5642BE35825009CE756 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +158,9 @@
 			name = "The Starry Night";
 			packageProductDependencies = (
 				08E6E55E2BE335A1009CE756 /* FirebaseAnalytics */,
+				08E6E5652BE35825009CE756 /* FirebaseFirestore */,
+				08E6E5672BE3583A009CE756 /* FirebaseFirestoreSwift */,
+				08E6E5692BE35879009CE756 /* FirebaseFirestoreCombine-Community */,
 			);
 			productName = "The Starry Night";
 			productReference = 089B43172AFF70AE0018293C /* The Starry Night.app */;
@@ -202,11 +225,13 @@
 				089B43292AFF71E70018293C /* HomeView.swift in Sources */,
 				089B431D2AFF70AE0018293C /* CustomTabView.swift in Sources */,
 				089B431B2AFF70AE0018293C /* The_Starry_NightApp.swift in Sources */,
+				08E6E5632BE352A4009CE756 /* StarStore.swift in Sources */,
 				089B432D2AFF720B0018293C /* MypageView.swift in Sources */,
 				08E6E55A2BE33058009CE756 /* UserStore.swift in Sources */,
 				08F151F02B74A64D0060EBC9 /* Enums.swift in Sources */,
 				08E6E5572BE32F69009CE756 /* UserModel.swift in Sources */,
 				083D77552B34783D002DA421 /* StarDetailView.swift in Sources */,
+				08E6E5612BE34CBF009CE756 /* StarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +456,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 08E6E55D2BE335A1009CE756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		08E6E5652BE35825009CE756 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E6E55D2BE335A1009CE756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		08E6E5672BE3583A009CE756 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E6E55D2BE335A1009CE756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		08E6E5692BE35879009CE756 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08E6E55D2BE335A1009CE756 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
