@@ -24,7 +24,7 @@ struct StarDetailView: View {
     
     var body: some View {
         VStack {
-            Text("Dear \(dear)")
+            Text(title)
                 .font(.largeTitle)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
@@ -35,7 +35,7 @@ struct StarDetailView: View {
             
             Spacer()
             
-            Text(title)
+            Text("Dear \(dear)")
                 .padding()
             Text(hashtag)
                 .padding()

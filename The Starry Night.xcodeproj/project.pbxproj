@@ -116,8 +116,8 @@
 			children = (
 				089B431C2AFF70AE0018293C /* CustomTabView.swift */,
 				089B43282AFF71E70018293C /* HomeView.swift */,
-				083D77542B34783D002DA421 /* StarDetailView.swift */,
 				089B432A2AFF71FA0018293C /* AddView.swift */,
+				083D77542B34783D002DA421 /* StarDetailView.swift */,
 				08A110252B22FB8400204675 /* StarView.swift */,
 				089B432C2AFF720B0018293C /* MypageView.swift */,
 			);

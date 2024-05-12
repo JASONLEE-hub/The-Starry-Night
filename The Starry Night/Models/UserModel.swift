@@ -14,4 +14,6 @@ struct UserModel: Codable {
     var userStarsID: [String]?
     /// User Coments
     var userComentsID: [String]?
+    
+    static let usersDummy: UserModel = UserModel(userName: "JS")
 }

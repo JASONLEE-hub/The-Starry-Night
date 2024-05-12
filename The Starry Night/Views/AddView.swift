@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct AddView: View {
-    
+    // UserStore.shared
+    @StateObject var starStore = StarStore()
     @Binding var tabIndex: TabIndex
     
     var currentDate: String {
@@ -26,19 +27,21 @@ struct AddView: View {
         NavigationStack {
             // Dear. 이름으로 자동완성되어야함.
             Text("오늘 하루, 누군가에게 보내질 편지에요.")
-                .foregroundStyle(.blue).opacity(0.8)
             Text("진심을 담아 작성해주세요.")
-                .foregroundStyle(.blue).opacity(0.8)
-            TextField("누구에게 적을지 적어주세요.", text: $dear)
-                .padding()
+            TextField("제목을 적어주세요.", text: $title)
+                .padding(.leading)
+                .padding(.top)
             
             TextField("내용을 적어주세요.", text: $text)
                 .padding()
             
             Spacer()
             
-            TextField("제목을 적어주세요.", text: $title)
-                .padding()
+
+            TextField("누구에게 적을지 적어주세요.", text: $dear)
+                .padding(.leading)
+                .padding(.top)
+            
             TextField("#해시태크를 적어주세요.", text: $hashtag)
                 .padding()
             
@@ -49,12 +52,11 @@ struct AddView: View {
         .navigationTitle(currentDate)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
+            ToolbarItem(placement: .bottomBar) {
                 Button() {
                     showingAlert = true
                 } label: {
-                    Image(systemName: "plus.app.fill")
-                        .foregroundStyle(.black)
+                    Image(systemName: "paperplane")
                 }
                 
             }
@@ -62,6 +64,10 @@ struct AddView: View {
         .animation(.none, value: 0)
         .alert("추가하시나요?", isPresented: $showingAlert) {
             Button("OK", role: .destructive) {
+                let newStar: StarModel = StarModel(title: title, text: text, dear: dear, bgInt: 0)
+                UserStore.shared.updateUserStarID(newUserStarID: newStar.id)
+                starStore.saveStar(star: newStar)
+                
                 withAnimation(.smooth) {
                     tabIndex = .home
                 }

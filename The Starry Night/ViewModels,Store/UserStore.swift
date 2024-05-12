@@ -17,9 +17,10 @@ final class UserStore: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
 
     private init() {
+        // 유저모델을 불러오거나 없으면 이름을 익명으로 초기화하여 가져오기
         self.user = loadUserModel() ?? UserModel(userName: "익명") // 초기 값 로드
         // 아래 내용 챗GPT 잘모르겠다.
-        $user
+        $user // 유저 내용이 변경되면 작동하는건가?
             .compactMap { $0?.userName }  // nil을 제외하고 userName만 추출
             .sink { newUserName in
                 print("New userName is \(newUserName)")
@@ -51,6 +52,22 @@ final class UserStore: ObservableObject {
     func updateUserName(newUserName: String) {
         if var user = loadUserModel() {
             user.userName = newUserName  // userName을 새로운 값으로 업데이트
+            saveUserModel(user: user)    // 변경된 UserModel을 다시 저장
+        }
+    }
+    
+    // UserModel의 StarID만 업데이트하는 함수
+    func updateUserStarID(newUserStarID: String) {
+        if var user = loadUserModel() {
+            user.userStarsID?.append(newUserStarID)  // userStarsID을 새로운 값으로 업데이트
+            saveUserModel(user: user)    // 변경된 UserModel을 다시 저장
+        }
+    }
+    
+    // UserModel의 CommentID만 업데이트하는 함수
+    func updateUserCommentID(newUserCommentID: String) {
+        if var user = loadUserModel() {
+            user.userComentsID?.append(newUserCommentID)  // userComentsID을 새로운 값으로 업데이트
             saveUserModel(user: user)    // 변경된 UserModel을 다시 저장
         }
     }
