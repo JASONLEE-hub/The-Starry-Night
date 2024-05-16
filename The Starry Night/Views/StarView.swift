@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StarView: View {
     let starSize : StarSize
-    var message: String = "Hello Star ㅇㅇㅇㅇㅇㅇ"
+    var title: String
     var bgColor: Color = Color(.point)
     var size: Double {
         switch starSize {
@@ -45,7 +45,7 @@ struct StarView: View {
             Circle()
                 .frame(maxWidth: size)
                 .foregroundStyle(bgColor)
-                .overlay(Text(message)
+                .overlay(Text(title)
                     .font(fontSize)
                     .bold()
                     .foregroundStyle(.white)
@@ -55,5 +55,5 @@ struct StarView: View {
 }
 
 #Preview {
-    StarView(starSize: .normal)
+    StarView(starSize: .normal, title: "TEST STAR")
 }

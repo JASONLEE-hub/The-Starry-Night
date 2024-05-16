@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    @StateObject var starStore: StarStore = StarStore()
     @State private var category: Category = .todayStar
     @State private var isShowingDetailView: Bool = false
+    @State private var tempStar: StarModel = StarModel.starDummy
     
     var body: some View {
         VStack {
@@ -22,10 +24,15 @@ struct HomeView: View {
             
             if category == .todayStar {
                 ScrollView {
-                    Button {
-                        isShowingDetailView = true
-                    } label: {
-                        StarView(starSize: .big)
+                    ForEach(starStore.stars) { star in
+                        Button {
+                            tempStar = star
+                            isShowingDetailView = true
+                        } label: {
+                            // 랜덤으로 바꾸기
+                            StarView(starSize: .normal, title: star.title)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                     }
                 }
             }
@@ -36,12 +43,15 @@ struct HomeView: View {
             
             
         }
+        .onAppear {
+            starStore.randomFetchStars(n: 5)
+        }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.BG))
         // animation에 value 무슨의미?
         .animation(.none, value: 0)
         .sheet(isPresented: $isShowingDetailView, content: {
-            StarDetailView(bgColor: .BG)
+            StarDetailView(star: tempStar)
         })
     }
 }

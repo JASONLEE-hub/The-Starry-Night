@@ -30,4 +30,6 @@ struct StarModel: Identifiable, Encodable, Decodable {
             return .point
         }
     }
+    
+    static let starDummy: StarModel = StarModel(title: "Star", text: "StarText", dear: "Moon", bgInt: 1)
 }
