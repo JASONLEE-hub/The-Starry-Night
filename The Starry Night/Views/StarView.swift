@@ -10,7 +10,7 @@ import SwiftUI
 struct StarView: View {
     let starSize : StarSize
     var title: String
-    var bgColor: Color = Color(.point)
+    var bgColor: Color = Color(.white)
     var size: Double {
         switch starSize {
         case .big :
@@ -18,7 +18,11 @@ struct StarView: View {
         case .normal :
             100
         case .small :
+            30
+        case .littleSmall:
             50
+        case .littleBig:
+            150
         }
     }
     var fontSize: Font {
@@ -28,7 +32,11 @@ struct StarView: View {
         case .normal :
             Font.title3
         case .small :
+            Font.system(size: 5)
+        case .littleSmall:
             Font.caption
+        case .littleBig:
+            Font.title2
         }
     }
     
@@ -48,7 +56,6 @@ struct StarView: View {
                 .overlay(Text(title)
                     .font(fontSize)
                     .bold()
-                    .foregroundStyle(.white)
                     .lineLimit(1))
         }
     }

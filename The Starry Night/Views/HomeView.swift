@@ -21,33 +21,35 @@ struct HomeView: View {
             }
             .pickerStyle(.segmented)
             Spacer()
-            
-            if category == .todayStar {
-                ScrollView {
-                    ForEach(starStore.stars) { star in
-                        Button {
-                            tempStar = star
-                            isShowingDetailView = true
-                        } label: {
-                            // 랜덤으로 바꾸기
-                            StarView(starSize: .normal, title: star.title)
-                                .frame(maxWidth: .infinity, alignment: .leading)
+            GeometryReader { geometry in
+                if category == .todayStar {
+                    ScrollView {
+                        ForEach(starStore.stars.shuffled()) { star in
+                            Button {
+                                tempStar = star
+                                isShowingDetailView = true
+                            } label: {
+                                StarView(starSize: StarSize.allCases.randomElement() ?? .normal, title: star.title)
+                                    .position(x: CGFloat.random(in: 10...geometry.size.width - 30), y: CGFloat.random(in: 10...geometry.size.height) - 30)
+                            }
                         }
                     }
                 }
-            }
-            
-            else if category == .myStar {
                 
+                else if category == .myStar {
+                    
+                }
             }
-            
             
         }
         .onAppear {
-            starStore.randomFetchStars(n: 5)
+            starStore.randomFetchStars(n: 15)
+        }
+        .refreshable {
+            starStore.randomFetchStars(n: 15)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.BG))
+        .background(Image("HomeBackground"))
         // animation에 value 무슨의미?
         .animation(.none, value: 0)
         .sheet(isPresented: $isShowingDetailView, content: {

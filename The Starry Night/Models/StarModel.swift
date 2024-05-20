@@ -11,8 +11,7 @@ struct StarModel: Identifiable, Encodable, Decodable {
     var id: String = UUID().uuidString
     var author: String = UserStore.shared.user?.userName ?? "이름없음"
     var title: String
-    // String에 #이 있으면 #하나만 앞에 붙여주고, #이 없으면 #붙여주기
-    var hashtag: [String]?
+    // 해시태그 picker로 나중에 생각하기
     var text: String
     var dear: String
     var bgInt: Int

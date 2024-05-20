@@ -33,9 +33,6 @@ struct StarDetailView: View {
             Text("Dear \(star.dear)")
                 .padding()
             
-            Text("역시 해시태그는 picker로")
-                .padding()
-            
             HStack {
                 TextField("", text: $commentText)
                     .textFieldStyle(.roundedBorder)

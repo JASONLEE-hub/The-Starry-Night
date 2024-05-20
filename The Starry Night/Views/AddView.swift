@@ -19,7 +19,6 @@ struct AddView: View {
     }
     @State private var dear: String = ""
     @State private var title: String = ""
-    @State private var hashtag: String = ""
     @State private var text: String = ""
     @State private var showingAlert: Bool = false
     
@@ -37,13 +36,9 @@ struct AddView: View {
             
             Spacer()
             
-
             TextField("누구에게 적을지 적어주세요.", text: $dear)
                 .padding(.leading)
                 .padding(.top)
-            
-            TextField("#해시태크를 적어주세요.", text: $hashtag)
-                .padding()
             
             Rectangle()
                 .foregroundStyle(Color(.white))
@@ -52,7 +47,7 @@ struct AddView: View {
         .navigationTitle(currentDate)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
-            ToolbarItem(placement: .bottomBar) {
+            ToolbarItem(placement: .topBarTrailing) {
                 Button() {
                     showingAlert = true
                 } label: {
